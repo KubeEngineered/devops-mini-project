@@ -8,7 +8,7 @@ class SimpleHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write(b"<h1>DevOps Mini Project - Version 2.0 Running!</h1>")
+        self.wfile.write(b"<h1>DevOps Mini Project - Version 4.0 running in MVP phase for review!</h1>")
 
 if __name__ == "__main__":
     with socketserver.TCPServer(("", PORT), SimpleHandler) as httpd:
