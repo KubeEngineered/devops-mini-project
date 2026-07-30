@@ -8,7 +8,7 @@ class SimpleHandler(http.server.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-type", "text/html")
         self.end_headers()
-        self.wfile.write(b"<h1>This is as simple an app as you get to see in tech</h1>")
+        self.wfile.write(b"<h1>Welcome to Apple India. Looking out for perfect device or solution</h1>")
 
 if __name__ == "__main__":
     with socketserver.TCPServer(("", PORT), SimpleHandler) as httpd:
