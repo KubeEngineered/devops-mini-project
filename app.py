@@ -8,7 +8,7 @@ def home():
     """Default landing route."""
     return jsonify({
         "status": "success",
-        "message": "Welcome to the Azure DevOps",
+        "message": "Welcome to the Azure DevOps Platform",
         "version": "1.0.0"
     })
 
@@ -17,7 +17,7 @@ def home():
 def health_check():
     """Health check endpoint useful for DevOps monitoring/containers."""
     return jsonify({
-        "status": "healthy",
+        "status": "running",
         "uptime": "OK"
     }), 200
 
