@@ -1,16 +1,27 @@
-import http.server
-import socketserver
+from flask import Flask, jsonify
 
-PORT = 8080
+app = Flask(__name__)
 
-class SimpleHandler(http.server.SimpleHTTPRequestHandler):
-    def do_GET(self):
-        self.send_response(200)
-        self.send_header("Content-type", "text/html")
-        self.end_headers()
-        self.wfile.write(b"<h1>Hi there. This site is under maintenance currently. Please come back in a while</h1>")
+
+@app.route("/")
+def home():
+    """Default landing route."""
+    return jsonify({
+        "status": "success",
+        "message": "Welcome to the DevOps Mini-Project API!",
+        "version": "1.0.0"
+    })
+
+
+@app.route("/health")
+def health_check():
+    """Health check endpoint useful for DevOps monitoring/containers."""
+    return jsonify({
+        "status": "healthy",
+        "uptime": "OK"
+    }), 200
+
 
 if __name__ == "__main__":
-    with socketserver.TCPServer(("", PORT), SimpleHandler) as httpd:
-        print(f"Server running on port {PORT}...")
-        httpd.serve_forever()
+    # Runs the app locally on http://127.0.0.1:5000
+    app.run(host="0.0.0.0", port=5000, debug=True)
