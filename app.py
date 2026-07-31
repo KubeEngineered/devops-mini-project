@@ -8,7 +8,7 @@ def home():
     """Default landing route."""
     return jsonify({
         "status": "success",
-        "message": "Welcome to the DevOps Mini-Project API!",
+        "message": "Welcome to the Azure DevOps",
         "version": "1.0.0"
     })
 
