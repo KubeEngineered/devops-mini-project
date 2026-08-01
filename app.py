@@ -7,8 +7,8 @@ app = Flask(__name__)
 def home():
     """Default landing route."""
     return jsonify({
-        "status": "live",
-        "message": "Welcome to the Azure Devops API platform",
+        "status": "idle",
+        "message": "Welcome to google cloud build platform",
         "version": "1.3.1"
     })
 
