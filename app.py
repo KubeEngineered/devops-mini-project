@@ -8,7 +8,7 @@ def home():
     """Default landing route."""
     return jsonify({
         "status": "idle",
-        "message": "Welcome to google cloud build platform",
+        "message": "Welcome to azure devops pipeline",
         "version": "1.3.1"
     })
 
@@ -17,8 +17,8 @@ def home():
 def health_check():
     """Health check endpoint useful for DevOps monitoring/containers."""
     return jsonify({
-        "status": "running",
-        "uptime": "OK"
+        "status": "inproduction",
+        "uptime": "Healthy"
     }), 200
 
 
