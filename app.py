@@ -7,9 +7,9 @@ app = Flask(__name__)
 def home():
     """Default landing route."""
     return jsonify({
-        "status": "idle",
-        "message": "Welcome to azure devops pipeline",
-        "version": "1.3.1"
+        "status": "placeholder for value input",
+        "message": "only accept requests coming from vnet apps and services",
+        "version": "2.11.8"
     })
 
 
