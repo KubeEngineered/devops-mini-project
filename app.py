@@ -7,8 +7,8 @@ app = Flask(__name__)
 def home():
     """Default landing route."""
     return jsonify({
-        "status": "waiting for status code from API",
-        "message": "process will exit once 200 message is acknowledged by service",
+        "status": "Waiting for success ping from Meltano job API",
+        "message": "Process will exit once 200 message is acknowledged by service",
         "version": "2.11.8"
     })
 
@@ -18,7 +18,7 @@ def health_check():
     """Health check endpoint useful for DevOps monitoring/containers."""
     return jsonify({
         "status": "in loop",
-        "uptime": "last 6 hours"
+        "uptime": "last 8 hours"
     }), 200
 
 
