@@ -7,8 +7,8 @@ app = Flask(__name__)
 def home():
     """Default landing route."""
     return jsonify({
-        "status": "placeholder for value input",
-        "message": "only accept requests coming from vnet apps and services",
+        "status": "waiting for status code from API",
+        "message": "process will exit once 200 message is acknowledged by service",
         "version": "2.11.8"
     })
 
@@ -17,8 +17,8 @@ def home():
 def health_check():
     """Health check endpoint useful for DevOps monitoring/containers."""
     return jsonify({
-        "status": "inproduction",
-        "uptime": "Healthy"
+        "status": "in loop",
+        "uptime": "last 6 hours"
     }), 200
 
 
