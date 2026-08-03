@@ -19,7 +19,7 @@ HTML_TEMPLATE = """
             color: #f8fafc;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             height: 100vh;
             margin: 0;
         }
@@ -29,7 +29,7 @@ HTML_TEMPLATE = """
             border-radius: 12px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
             max-width: 400px;
-            width: 100%;
+            width: 110%;
             text-align: center;
         }
         h1 { color: #38bdf8; margin-bottom: 0.5rem; }
@@ -46,7 +46,7 @@ HTML_TEMPLATE = """
         }
         .info {
             margin-top: 1.5rem;
-            text-align: left;
+            text-align: right;
             background: #0f172a;
             padding: 1rem;
             border-radius: 8px;
