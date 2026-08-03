@@ -20,16 +20,16 @@ HTML_TEMPLATE = """
             display: flex;
             justify-content: center;
             align-items: left;
-            height: 100vh;
-            margin: 0;
+            height: 90vh;
+            margin: 1;
         }
         .card {
             background-color: #1e293b;
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-            max-width: 400px;
-            width: 110%;
+            max-width: 300px;
+            width: 100%;
             text-align: center;
         }
         h1 { color: #38bdf8; margin-bottom: 0.5rem; }
@@ -78,8 +78,8 @@ def home():
 @app.route("/api/v1/status")
 def status():
     return jsonify({
-        "status": "success",
-        "message": "API is operational",
+        "status": "pass",
+        "message": "API is up and running",
         "container_id": socket.gethostname()
     }), 200
 
