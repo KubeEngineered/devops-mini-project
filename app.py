@@ -20,17 +20,17 @@ HTML_TEMPLATE = """
             display: flex;
             justify-content: center;
             align-items: left;
-            height: 90vh;
-            margin: 1;
+            height: 75vh;
+            margin: 1.5;
         }
         .card {
             background-color: #1e293b;
             padding: 2rem;
-            border-radius: 12px;
+            border-radius: 11px;
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
-            max-width: 300px;
-            width: 100%;
-            text-align: center;
+            max-width: 250px;
+            width: 95%;
+            text-align: left;
         }
         h1 { color: #38bdf8; margin-bottom: 0.5rem; }
         p { color: #94a3b8; font-size: 0.95rem; }
