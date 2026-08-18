@@ -1,0 +1,2 @@
+# Add your python dependencies here if needed
+requests==2.31.0
