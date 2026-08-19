@@ -1,0 +1,7 @@
+# Start with a full-sized Go image
+FROM golang:1.22
+WORKDIR /app
+COPY . .
+# This builds the app and keeps all the source code/build tools inside
+RUN go build -o myapp main.go
+CMD ["./myapp"]
